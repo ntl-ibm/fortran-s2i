@@ -30,5 +30,5 @@ make
 popd
 
 echo "---> Installing application..."
-find /tmp/build -type f -perm /111 -print -exec mv {} ./ \; 
+find /tmp/build -not -path "*.git/*" -type f -perm /111 -print -exec mv {} ./ \; 
 #find /tmp/build -not -name "*.f90" -not -name "*.h" -not -name "*.o" -print -exec mv {} ./
