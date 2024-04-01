@@ -10,7 +10,7 @@ LABEL io.k8s.description="Platform for building Fortran" \
       io.k8s.display-name="builder ${BUILDER_VERSION}" \
       io.openshift.tags="builder,fortran"
 
-RUN dnf -y install gcc-gfortran  \
+RUN dnf -y install gcc-gfortran make \
     && dnf clean all && rm -rf /var/cache/dnf/* && rm -rf /var/cache/yum 
 
 # Copy the S2I scripts to /usr/libexec/s2i, since image
