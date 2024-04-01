@@ -16,7 +16,7 @@ fi
 #
 if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
   echo "---> Restoring build artifacts..."
-  shopt -s dotglob
+ shopt -s dotglob
   mv /tmp/artifacts/* /tmp/build
   shopt -u dotglob
 fi
