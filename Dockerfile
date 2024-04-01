@@ -1,5 +1,5 @@
 # fortran-s2i
-FROM registry.redhat.io/rhscl/s2i-core-rhel9
+FROM ubi8/s2i-core:latest
 
 LABEL maintainer="Nick Lawrence <ntl@us.ibm.com>"
 LABEL io.openshift.s2i.scripts-url=" /usr/libexec/s2i"
