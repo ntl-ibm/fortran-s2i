@@ -16,7 +16,7 @@
 FROM ubi8/s2i-core:latest
 
 LABEL maintainer="Nick Lawrence <ntl@us.ibm.com>"
-LABEL io.openshift.s2i.scripts-url="/usr/libexec/s2i"
+LABEL io.openshift.s2i.scripts-url="file:///usr/libexec/s2i"
 
 ENV BUILDER_VERSION 1.0
 
